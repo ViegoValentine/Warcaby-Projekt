@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include "Pionek.h"
 #include "Plansza.h"
+#include "Logika.h"
 
 int main()
 {
