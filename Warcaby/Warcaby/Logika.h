@@ -8,5 +8,5 @@ using namespace std;
 class Logika: public Pionek
 {
 public:
-  void ruchPionka();
+  void ruchPionka(Pionek pionki[]);
 };
