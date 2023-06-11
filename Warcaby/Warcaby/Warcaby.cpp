@@ -2,11 +2,12 @@
 #include "Pionek.h"
 #include "Plansza.h"
 #include "Logika.h"
+#include "Gracz.h"
 
 int main()
 {
 	char znak;
-	int miejsce = 1;
+	int miejsce = 1, wybor = 1;
 	//przypisanie wartosci wszystkim z 24 pionków.
 	Pionek pionki[24];
 	for (int i = 0; i < 24; i++) {
@@ -51,4 +52,22 @@ int main()
 	}*/
 	Plansza generowaniePlanszy;
 	generowaniePlanszy.generowanieTablicy(pionki);
+
+	//wybor czy ai czy 2 graczy, liczby w nawiasach oznaczaja czy gracz jest Ai
+	cout << "Wybierz:" << endl;
+	cout << "1 - gracz kontra gracz" << endl;
+	cout << "2 - gracz kontra komputer (opcja beta)" << endl;
+	cin >> wybor;
+	if (wybor == 1) {
+		Gracz gracz1;
+		Gracz gracz2;
+		gracz1.wyborGraczy(1, 0, 'X');
+		gracz2.wyborGraczy(2, 0, 'O');
+	}
+	else if (wybor == 2) {
+		Gracz graczCzlowiek;
+		Gracz graczAi;
+		graczCzlowiek.wyborGraczy(1, 0, 'X');
+		graczAi.wyborGraczy(2, 1, 'O');
+	}
 }
