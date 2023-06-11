@@ -6,6 +6,7 @@
 
 int main()
 {
+	//chujchuj
 	char znak;
 	int miejsce = 1, wybor = 1;
 	//przypisanie wartosci wszystkim z 24 pionków.
