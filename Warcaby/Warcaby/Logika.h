@@ -10,7 +10,8 @@ class Logika: public Pionek
 public:
   char zmiennaX;
   int zmiennaY;
-  bool CzyWolne;
   
-  void ruchPionka(Pionek pionki[]);
+  bool CzyWolne; //sprawdza czy dane pole jest wolne i czy jest mozliwosc wykonania ruchu
+  void mozliwosciRuchu(Pionek pionki[], zmiennaX, zmiennaY); //sprawdza czy podany ruch jest mozliwy 
+  void ruchPionka(Pionek pionki[], zmiennaX, zmiennaY);   //rusza pionkiem kiedy mozliwy jest ruch
 };
