@@ -1,7 +1,7 @@
 #include "Logika.h"
 
-void Logika::mozliwyRuch()
+void Logika::mozliwosciRuchu(Pionek pionki[], zmiennaX, zmiennaY)
 {
-
+  
 }
 
